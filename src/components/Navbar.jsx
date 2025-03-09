@@ -9,10 +9,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className=" shadow-md ">
+        <header className=" shadow-md sticky top-0 z-[3000]">
             {/* Social Links Bar */}
             <div className="bg-main-dark text-white py-2">
-                <div className="container mx-auto flex justify-start px-4 sm:px-[10vw] items-center gap-2">
+                <div className="flex justify-start px-4 sm:px-[10vw] items-center gap-2">
                     <div className="flex space-x-4">
                         <a href="#" className="hover:text-blue-400 transition-colors">
                             <FaFacebook size={18} />
@@ -29,12 +29,14 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
+            
             {/* Main Navigation */}
-            <div className="container mx-auto  bg-main-light">
+            <div className=" w-full bg-main-light">
                 <div className="flex justify-between items-center py-4 px-4 sm:px-[10vw]">
                     {/* Logo */}
-                    <div className="text-2xl font-bold text-gray-800">Logo</div>
+                    <div className="text-2xl font-bold text-gray-800">
+                        <img src="/logo/logo.png" alt="Logo" className=" h-8 md:h-16 w-auto" />
+                    </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
@@ -52,12 +54,12 @@ const Navbar = () => {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Home</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">About</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Services</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Portfolio</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Home</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">About</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Services</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Portfolio</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Blog</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Contact</a>
                     </nav>
                 </div>
             </div>
@@ -66,12 +68,12 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-main-light py-2 px-4">
                     <nav className="flex flex-col space-y-4">
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2 border-b border-gray-200">Home</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2 border-b border-gray-200">About</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2 border-b border-gray-200">Services</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2 border-b border-gray-200">Portfolio</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2 border-b border-gray-200">Blog</a>
-                        <a href="#" className="text-gray-800 hover:text-blue-600 font-medium transition-colors py-2">Contact</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Home</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">About</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Services</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Portfolio</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Blog</a>
+                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2">Contact</a>
                     </nav>
                 </div>
             )}
