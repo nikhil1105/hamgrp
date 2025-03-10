@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ setActivePage }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -14,22 +14,22 @@ const Navbar = () => {
             <div className="bg-main-dark text-white py-2">
                 <div className="flex justify-start px-4 sm:px-[10vw] items-center gap-2">
                     <div className="flex space-x-4">
-                        <a href="#" className="hover:text-blue-400 transition-colors">
+                        <span className="hover:text-blue-400 transition-colors cursor-pointer">
                             <FaFacebook size={18} />
-                        </a>
-                        <a href="#" className="hover:text-blue-400 transition-colors">
+                        </span>
+                        <span className="hover:text-blue-400 transition-colors cursor-pointer">
                             <FaTwitter size={18} />
-                        </a>
-                        <a href="#" className="hover:text-blue-400 transition-colors">
+                        </span>
+                        <span className="hover:text-blue-400 transition-colors cursor-pointer">
                             <FaInstagram size={18} />
-                        </a>
-                        <a href="#" className="hover:text-blue-400 transition-colors">
+                        </span>
+                        <span className="hover:text-blue-400 transition-colors cursor-pointer">
                             <FaLinkedin size={18} />
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
-            
+
             {/* Main Navigation */}
             <div className=" w-full bg-main-light">
                 <div className="flex justify-between items-center py-4 px-4 sm:px-[10vw]">
@@ -51,15 +51,14 @@ const Navbar = () => {
                             )}
                         </button>
                     </div>
-
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Home</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">About</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Services</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Portfolio</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Blog</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors">Contact</a>
+                        <span onClick={() => setActivePage('home')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Home</span>
+                        <span onClick={() => setActivePage('about')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">About</span>
+                        <span onClick={() => setActivePage('service')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Services</span>
+                        <span onClick={() => setActivePage('faq')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">faq</span>
+                        <span onClick={() => setActivePage('client')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">client</span>
+                        <span onClick={() => setActivePage('teams')} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Teams</span>
                     </nav>
                 </div>
             </div>
@@ -68,16 +67,17 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-main-light py-2 px-4">
                     <nav className="flex flex-col space-y-4">
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Home</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">About</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Services</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Portfolio</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2 border-b border-gray-200">Blog</a>
-                        <a href="#" className="text-gray-800 hover:text-white font-medium transition-colors py-2">Contact</a>
+                        <span onClick={() => { setActivePage('home'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Home</span>
+                        <span onClick={() => { setActivePage('about'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">About</span>
+                        <span onClick={() => { setActivePage('service'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Services</span>
+                        <span onClick={() => { setActivePage('faq'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">faq</span>
+                        <span onClick={() => { setActivePage('client'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">client</span>
+                        <span onClick={() => { setActivePage('teams'); setIsMenuOpen(!isMenuOpen); }} className="text-gray-800 hover:text-white font-medium transition-colors cursor-pointer">Teams</span>
                     </nav>
                 </div>
-            )}
-        </header>
+            )
+            }
+        </header >
     );
 };
 

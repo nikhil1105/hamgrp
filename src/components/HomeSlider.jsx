@@ -9,7 +9,7 @@ const HomeSlider = () => {
     {
       id: 1,
       tagline: "Your debt our priority",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsr9a9UQIVyw4tJzU1TFAbzydSqd9mO241cg&s", // Replace with your actual image
+      image: "/homeSlider/1.jpeg", // Replace with your actual image
       content: (
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">OUR AIM OUR VISION</h2>
@@ -31,7 +31,7 @@ const HomeSlider = () => {
     {
       id: 2,
       tagline: "DEBT COUNSELLING SERVICES IN UAE",
-      image: "https://cdn-ilapbpn.nitrocdn.com/ysfNjUjSchWatzovcIzFRLdIZcsNPFHx/assets/images/optimized/rev-9eb646f/guardianlit.com/wp-content/uploads/2024/12/what-is-acsi-debt-collector.jpg", // Replace with your actual image
+      image: "/homeSlider/2.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
           <p className="mb-4">
@@ -54,7 +54,7 @@ const HomeSlider = () => {
     {
       id: 3,
       tagline: "Debt Collection Dubai",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeu6wf08iXPeKCMnkFpZdOWZNLsxiF6zUiWQ&s", // Replace with your actual image
+      image: "/homeSlider/3.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
           <p className="mb-4">

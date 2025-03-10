@@ -3,11 +3,10 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import HomeSlider from '../components/HomeSlider'
 
-function NFWrapper({ children }) {
+function NFWrapper({ children , setActivePage }) {
     return (
         <div className='' >
-            <Navbar />
-            <HomeSlider/>
+            <Navbar setActivePage={setActivePage} />
             {
                 children
             }
