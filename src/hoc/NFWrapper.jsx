@@ -5,7 +5,7 @@ import HomeSlider from '../components/HomeSlider'
 
 function NFWrapper({ children }) {
     return (
-        <div className='container' >
+        <div className='' >
             <Navbar />
             <HomeSlider/>
             {
