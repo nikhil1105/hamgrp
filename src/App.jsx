@@ -8,13 +8,14 @@ import NFWrapper from './hoc/NFWrapper'
 import { useEffect, useState } from 'react'
 import Home from './components/Home'
 import ProfileCard from './components/Teams'
+import PrivacyPolicy from './components/Privacy'
 const activePageData = {
   home: <Home />,
   about: <About />,
   faq: <FAQPage />,
   service: <Service />,
   client: <Client />,
-  teams: <ProfileCard />
+  teams: <ProfileCard />,
 }
 function App() {
   const [activePage, setActivePage] = useState('home')
@@ -29,7 +30,7 @@ function App() {
           {activePageData[activePage]}
         </>
         <ClientSlider />
-        
+        <PrivacyPolicy />
       </NFWrapper>
     </>
   )
