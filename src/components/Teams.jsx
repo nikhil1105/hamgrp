@@ -7,7 +7,7 @@ const ProfileCard = () => {
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-400 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img 
-            src="http://hemgroups.com/wp-content/uploads/2017/03/aaa.jpg"
+            src="/team/hem1.jpg"
             alt="Arabinda Mitra" 
             className="relative w-32 h-32 mx-auto rounded-full mb-4 border-2 border-white shadow-lg object-cover"
           />
@@ -24,7 +24,7 @@ const ProfileCard = () => {
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img 
-            src="http://hemgroups.com/wp-content/uploads/2017/03/IMG_20181016_104427newww.jpg"
+            src="/team/hem2.jpg"
             alt="Brijesh Nair" 
             className="relative w-32 h-32 mx-auto rounded-full mb-4 border-2 border-white shadow-lg object-cover"
           />

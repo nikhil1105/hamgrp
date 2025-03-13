@@ -19,6 +19,7 @@ const Navbar = ({ setActivePage  , activePage }) => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        window.scrollTo({ top: 0, behavior: "smooth" })
     };
 
     const handleNavClick = (page) => {

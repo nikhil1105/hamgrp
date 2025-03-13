@@ -26,7 +26,8 @@ const logos = [
 export default function ClientSlider() {
     return (
         <div className="overflow-hidden bg-gray-100 py-12">
-            <div className="relative flex w-full">
+                <h2 className="text-2xl text-center font-bold text-orange-600 mb-6">Our Clients</h2>
+                <div className="relative flex w-full mt-[10px]" >
                 <motion.div
                     className="flex space-x-10 min-w-[250%]"
                     initial={{ x: 0 }}
@@ -38,7 +39,7 @@ export default function ClientSlider() {
                     }}
                 >
                     {[...logos, ...logos].map((logo, index) => (
-                        <img key={index} src={logo} alt="Client Logo" className=" h-16 md:h-18 w-auto" />
+                        <img key={index} src={logo} alt="Client Logo" className=" h-16 md:h-20 w-auto" />
                     ))}
                 </motion.div>
             </div>
