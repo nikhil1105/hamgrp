@@ -18,9 +18,6 @@ const ProfileCard = () => {
         <p className="text-gray-700 text-sm leading-relaxed">
           Mr. Arabinda Mitra has 20 years of experience in Collections & AVCV, debt collection, back-end operation, credit card collection, and other collections. He started with Citi bank with 3 employees to 350 clients. He is the pioneer of building Citi bank network. Arabinda Mitra is also an inspiring and motivating leader and has accountability for managing a team and developing talent. He has qualities of a strong critical thinker, creator, collaborator, and innovator who can effectively drive results.
         </p>
-        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md">
-          Contact
-        </button>
       </div>
       
       <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-orange-500 transition-transform hover:scale-102">
@@ -38,9 +35,6 @@ const ProfileCard = () => {
         <p className="text-gray-700 text-sm leading-relaxed">
           Director of Hem group Brijesh Nair specializes in providing tailored strategies to provide quality deliverables. With over 20 years of experience in the financial sector/services, Brijesh has worked with HDFC bank and E Serve International Ltd (CITI BANK). The skills of leadership, resourceful in ensuring desired business requirements, strict adherence to guidelines, affirm commitment are what Brijesh Nair strongly believes to maintain strong client relationship across.
         </p>
-        <button className="mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition shadow-md">
-          Contact
-        </button>
       </div>
     </div>
   );

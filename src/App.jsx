@@ -16,21 +16,16 @@ const activePageData = {
   service: <Service />,
   client: <Client />,
   teams: <ProfileCard />,
+  Privacy: <PrivacyPolicy />,
 }
 function App() {
   const [activePage, setActivePage] = useState('home')
-  useEffect(() => {
-    console.log('activePage', activePage);
-
-  }, [activePage])
   return (
     <>
-      <NFWrapper setActivePage={setActivePage} >
+      <NFWrapper activePage={activePage} setActivePage={setActivePage} >
         <>
           {activePageData[activePage]}
         </>
-        <ClientSlider />
-        <PrivacyPolicy />
       </NFWrapper>
     </>
   )

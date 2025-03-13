@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
@@ -33,6 +34,38 @@ const faqs = [
   },
 ];
 
+const FAQItem = ({ faq, index, isOpen, toggleFAQ }) => {
+  return (
+    <div className="mb-4 rounded-lg overflow-hidden shadow-md">
+      <div
+        role="button"
+        aria-expanded={isOpen}
+        className={`p-4 font-semibold flex justify-between items-center cursor-pointer transition-colors duration-200 ${
+          isOpen ? "bg-orange-50 border-l-4 border-blue-600" : "bg-white border-l-4 border-orange-500"
+        }`}
+        onClick={() => toggleFAQ(index)}
+      >
+        <span className="text-gray-800">{faq.question}</span>
+        <span className={`flex items-center justify-center h-6 w-6 rounded-full text-white font-bold text-sm ${isOpen ? "bg-blue-600" : "bg-orange-500"}`}>
+          {isOpen ? "−" : "+"}
+        </span>
+      </div>
+      
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="overflow-hidden"
+      >
+        <div className="p-5 bg-white text-gray-700 border-t border-gray-100">
+          {faq.answer}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
 const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -53,50 +86,9 @@ const FAQPage = () => {
           </p>
         </div>
 
-        {faqs.map((faq, index) => {
-          const isOpen = openIndex === index;
-          return (
-            <div
-              key={index}
-              className="mb-4 rounded-lg overflow-hidden shadow-md"
-            >
-              <div
-                className={`p-4 font-semibold flex justify-between items-center cursor-pointer transition-colors duration-200 ${isOpen ? "bg-orange-50" : "bg-white"
-                  }`}
-                onClick={() => toggleFAQ(index)}
-                style={{
-                  borderLeft: isOpen
-                    ? "4px solid #2563eb" // blue-600
-                    : "4px solid #f97316", // orange-500
-                }}
-              >
-                <span className="text-gray-800">{faq.question}</span>
-                <span
-                  className="flex items-center justify-center h-6 w-6 rounded-full text-white font-bold text-sm"
-                  style={{
-                    backgroundColor: isOpen ? "#2563eb" : "#f97316", // blue-600 : orange-500
-                  }}
-                >
-                  {isOpen ? "−" : "+"}
-                </span>
-              </div>
-              {isOpen && (
-                <div className="p-5 bg-white text-gray-700 border-t border-gray-100">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          );
-        })}
-
-        <div className="mt-10 text-center">
-          <p className="text-gray-700 mb-4">
-            Still have questions about our services?
-          </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">
-            Contact Us Today
-          </button>
-        </div>
+        {faqs.map((faq, index) => (
+          <FAQItem key={index} faq={faq} index={index} isOpen={openIndex === index} toggleFAQ={toggleFAQ} />
+        ))}
       </div>
     </div>
   );

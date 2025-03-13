@@ -37,15 +37,6 @@ const ClientLogos = ({ categories }) => {
           </div>
         ))}
 
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center mt-12">
-          <h2 className="text-2xl font-bold text-orange-600 mb-4">Become Our Client</h2>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Join our growing list of satisfied clients and experience our professional debt recovery services tailored to your specific needs.
-          </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">
-            Contact Us Today
-          </button>
-        </div>
       </div>
     </div>
   );
@@ -56,31 +47,31 @@ const clientData = [
   {
     title: "Domestic Clients",
     logos: [
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/volkswagan.jpg", alt: "Volkswagen Financial Services" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/tvs.jpg", alt: "TVS Finance & Services Ltd." },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/tatamotors.jpg", alt: "TATA Motorfinance" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/ltfinance.jpg", alt: "L&T Finance" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/icicibank.jpg", alt: "ICICI Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/hdfcbank.jpg", alt: "HDFC Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/fullerton.jpg", alt: "Fullerton India" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/citibank.jpg", alt: "Citibank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/bajajfinance.jpg", alt: "Bajaj Finserv" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/axisbank.jpg", alt: "Axis Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/capital-first.png", alt: "Capital First" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/indusind-bank.png", alt: "IndusInd Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/sbi-card.png", alt: "SBI Card" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/yes-bank.png", alt: "Yes Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/vodafone.jpg", alt: "Vodafone" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/airtel.jpg", alt: "Airtel" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/RBL-Bank.png", alt: "RBL Bank" },
+      { src: "/clients/volkswagan.jpg", alt: "Volkswagen Financial Services" },
+      { src: "/clients/tvs.jpg", alt: "TVS Finance & Services Ltd." },
+      { src: "/clients/tatamotors.jpg", alt: "TATA Motorfinance" },
+      { src: "/clients/ltfinance.jpg", alt: "L&T Finance" },
+      { src: "/clients/icicibank.jpg", alt: "ICICI Bank" },
+      { src: "/clients/hdfcbank.jpg", alt: "HDFC Bank" },
+      { src: "/clients/fullerton.jpg", alt: "Fullerton India" },
+      { src: "/clients/citibank.jpg", alt: "Citibank" },
+      { src: "/clients/bajajfinance.jpg", alt: "Bajaj Finserv" },
+      { src: "/clients/axisbank.jpg", alt: "Axis Bank" },
+      { src: "/clients/capital-first.png", alt: "Capital First" },
+      { src: "/clients/indusind-bank.png", alt: "IndusInd Bank" },
+      { src: "/clients/sbi-card.png", alt: "SBI Card" },
+      { src: "/clients/yes-bank.png", alt: "Yes Bank" },
+      { src: "/clients/vodafone.jpg", alt: "Vodafone" },
+      { src: "/clients/airtel.jpg", alt: "Airtel" },
+      { src: "/clients/RBL-Bank.png", alt: "RBL Bank" },
     ],
   },
   {
     title: "International Clients",
     logos: [
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/rakbank.jpg", alt: "RAKBank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/FabLogo-1.png", alt: "First Abu Dhabi Bank" },
-      { src: "http://hemgroups.com/wp-content/uploads/2017/03/DIB-1.png", alt: "Dubai Islamic Bank" },
+      { src: "/clients/internationalClients/rakbank.jpg", alt: "RAKBank" },
+      { src: "/clients/internationalClients/FabLogo-1.png", alt: "First Abu Dhabi Bank" },
+      { src: "/clients/internationalClients/DIB-1.png", alt: "Dubai Islamic Bank" },
     ],
   },
 ];

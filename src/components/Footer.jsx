@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ setActivePage }) => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-secondary-dark text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Company Name</h3>
@@ -35,23 +35,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Our Services</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">App Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+              <li><span onClick={() => { setActivePage('home'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Home</span></li>
+              <li><span onClick={() => { setActivePage('about'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">About</span></li>
+              <li><span onClick={() => { setActivePage('service'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Services</span></li>
+              <li><span onClick={() => { setActivePage('faq'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQ's</span></li>
+              <li><span onClick={() => { setActivePage('client'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">client</span></li>
+              <li><span onClick={() => { setActivePage('teams'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Teams</span></li>
+              <li><span onClick={() => { setActivePage('Privacy'); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Privacy & Policy</span></li>
             </ul>
           </div>
 
