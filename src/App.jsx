@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react'
 import Home from './components/Home'
 import ProfileCard from './components/Teams'
 import PrivacyPolicy from './components/Privacy'
+import DebtCollectionServices from './components/ClentDubai'
+import DebtRecoverySolutions from './components/Clientindia'
 const activePageData = {
   home: <Home />,
   about: <About />,
@@ -17,6 +19,8 @@ const activePageData = {
   client: <Client />,
   teams: <ProfileCard />,
   Privacy: <PrivacyPolicy />,
+  clientDubai: <DebtCollectionServices/>,
+  clientIndia: <DebtRecoverySolutions/>,
 }
 function App() {
   const [activePage, setActivePage] = useState('home')
