@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const logos = [
+const india = [
     "/clients/airtel.jpg",
     "/clients/axisbank.jpg",
     "/clients/bajajfinance.jpg",
@@ -18,28 +18,34 @@ const logos = [
     "/clients/vodafone.jpg",
     "/clients/volkswagan.jpg",
     "/clients/yes-bank.png",
+];
+
+const dubai = [
     "/clients/internationalClients/DIB-1.png",
     "/clients/internationalClients/FabLogo-1.png",
     "/clients/internationalClients/rakbank.jpg",
 ];
 
-export default function ClientSlider() {
+export default function ClientSlider({ activePage }) {
+
+    const logos = activePage === "clientDubai" ? [...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai, ...dubai,] : activePage === "clientIndia" ? [...india, ...india] : india.concat(dubai);
+
     return (
-        <div className="overflow-hidden bg-gray-100 py-12">
-                <h2 className="text-2xl text-center font-bold text-orange-600 mb-6">Our Clients</h2>
-                <div className="relative flex w-full mt-[10px]" >
+        <div className="overflow-hidden py-12">
+            <h2 className="text-2xl text-center font-bold text-orange-600 mb-6">Our Clients</h2>
+            <div className="relative flex w-full mt-[10px]">
                 <motion.div
-                    className="flex space-x-10 min-w-[250%]"
+                    className="flex space-x-10 min-w-[300%]"
                     initial={{ x: 0 }}
                     animate={{ x: "-100%" }}
                     transition={{
                         repeat: Infinity,
                         ease: "linear",
-                        duration: 30, // Increased to ensure smooth full animation
+                        duration: 20, // Smooth animation duration
                     }}
                 >
-                    {[...logos, ...logos].map((logo, index) => (
-                        <img key={index} src={logo} alt="Client Logo" className=" h-16 md:h-20 w-auto" />
+                    {logos.map((logo, index) => (
+                        <img key={index} src={logo} alt="Client Logo" className="h-16 md:h-20 w-auto" />
                     ))}
                 </motion.div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ClientLogos = ({ categories }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 py-12">
+    <div className="min-h-screen  py-12">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-orange-600 mb-4">Our Clients</h1>

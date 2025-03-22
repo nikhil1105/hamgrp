@@ -74,7 +74,7 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="p-6 bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen">
+    <div className="p-6  min-h-screen">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-orange-600 mb-3">

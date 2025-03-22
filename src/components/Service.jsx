@@ -2,7 +2,7 @@ import React from 'react';
 
 function Service() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
+    <div className="min-h-screen ">
       <div className="max-w-4xl mx-auto p-8">
         {/* Header Section */}
         <div className="text-center mb-12">

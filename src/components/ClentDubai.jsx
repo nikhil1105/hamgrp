@@ -2,7 +2,7 @@ import React from "react";
 
 const DebtCollectionServices = () => {
   return (
-    <div className="max-w-5xl mx-auto p-12 bg-gradient-to-br from-white to-gray-100 shadow-2xl rounded-3xl border border-gray-300 transition-all duration-300 hover:shadow-3xl">
+    <div className="max-w-5xl my-10 mx-auto p-12 bg-gradient-to-br from-white to-gray-100 shadow-2xl rounded-3xl border border-gray-300 transition-all duration-300 hover:shadow-3xl">
       <h2 className="text-4xl font-extrabold text-blue-900 mb-10 text-center tracking-wide animate-fadeIn">
         Specialized Debt Collection & Counseling Services in Dubai
       </h2>

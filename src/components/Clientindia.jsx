@@ -2,7 +2,7 @@ import React from "react";
 
 const DebtRecoverySolutions = () => {
     return (
-        <div className="max-w-5xl mx-auto p-12 bg-gradient-to-r from-white to-gray-100 shadow-2xl rounded-3xl border border-gray-300">
+        <div className="max-w-5xl my-10 mx-auto p-12 bg-gradient-to-r from-white to-gray-100 shadow-2xl rounded-3xl border border-gray-300">
             <h2 className="text-4xl font-extrabold text-blue-900 mb-10 text-center tracking-wide">
                 Efficient Debt Recovery Solutions Across India - Hem Group
             </h2>
