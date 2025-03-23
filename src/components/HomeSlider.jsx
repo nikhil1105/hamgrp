@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const HomeSlider = () => {
+const HomeSlider = ({setActivePage}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -118,12 +118,12 @@ const HomeSlider = () => {
               {slide.content}
             </div> */}
 
-            <a
-              to="/about-us"
+            <div
+              onClick={()=>setActivePage('about')}
               className="bg-secondary-light md:opacity-50 hover:opacity-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 mt-4 cursor-pointer"
             >
               Read More
-            </a>
+            </div>
           </div>
         </div>
       ))}

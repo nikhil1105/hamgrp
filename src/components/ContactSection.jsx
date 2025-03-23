@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
@@ -14,18 +15,26 @@ export default function ContactSection() {
     dob: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Ensure at least one of Passport Number or DOB is filled
     if (!formData.passportNumber && !formData.dob) {
-      alert("Please provide either a Passport Number or Date of Birth.");
+      Swal.fire({
+        icon: "warning",
+        title: "Validation Error",
+        text: "Please provide either a Passport Number or Date of Birth.",
+      });
       return;
     }
+
+    setIsSubmitting(true);
 
     emailjs
       .send(
@@ -50,9 +59,26 @@ export default function ContactSection() {
           passportNumber: "",
           dob: "",
         });
+
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "Your message has been successfully sent.",
+          timer: 3000,
+          showConfirmButton: false,
+        });
       })
       .catch((error) => {
         console.error("Error sending email:", error);
+
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please try again later.",
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   };
 
@@ -66,17 +92,26 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-lg font-semibold mb-4">OUR ADDRESS</h2>
-          <p className="flex items-center gap-2 text-gray-600 mb-2">
-            <FaMapMarkerAlt className="text-blue-500" /> Flat No. 201, 2nd Floor, Indira Chambers, Tilak Road, Pune - 411030.
+
+          {/* Head Office */}
+          <h3 className="text-md font-semibold text-blue-500 mb-2">Head Office:</h3>
+          <p className="flex items-center gap-2 text-gray-600 mb-4">
+            <FaMapMarkerAlt className="text-blue-500" /> Flat No. 201, 2nd Floor, Indira Chambers, 1549-B, Sadashiv Peth, Opp. Maharashtra Mandal, Tilak Road, Pune - 411030.
           </p>
-          <p className="flex items-center gap-2 text-gray-600 mb-2">
+          <p className="flex items-center gap-2 text-gray-600 mb-4">
             <FaPhone className="text-blue-500" /> 020 - 41216616
           </p>
-          <p className="flex items-center gap-2 text-gray-600 mb-2">
+          <p className="flex items-center gap-2 text-gray-600 mb-4">
             <FaPhone className="text-blue-500" /> 9028402097
           </p>
           <p className="flex items-center gap-2 text-gray-600">
             <FaEnvelope className="text-blue-500" /> arvind.mitra@hemgroups.com
+          </p>
+
+          {/* Regional Office */}
+          <h3 className="text-md font-semibold text-blue-500 mt-16 mb-2">Regional Office:</h3>
+          <p className="flex items-center gap-2 text-gray-600 mb-2">
+            <FaMapMarkerAlt className="text-blue-500" /> Flat No. 6, Rugved CHS Ltd., Landmark Near Kirti College, Veer Savarkar Marg, Prabhadevi, Mumbai - 400028.
           </p>
         </motion.div>
 
@@ -94,8 +129,14 @@ export default function ContactSection() {
             <input type="text" name="passportNumber" value={formData.passportNumber} onChange={handleChange} placeholder="Passport Number (Optional)" className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             <input type="date" name="dob" value={formData.dob} onChange={handleChange} placeholder="Date of Birth (Optional)" className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 h-24" />
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full bg-blue-500 text-white py-2 rounded-lg shadow-md hover:bg-blue-600">
-              Send Message
+            
+            <motion.button
+              whileHover={!isSubmitting ? { scale: 1.05 } : {}}
+              whileTap={!isSubmitting ? { scale: 0.95 } : {}}
+              className={`w-full py-2 rounded-lg shadow-md text-white ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"}`}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Sending..." : "Send Message"}
             </motion.button>
           </form>
         </motion.div>

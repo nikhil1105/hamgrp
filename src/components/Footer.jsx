@@ -11,21 +11,21 @@ const Footer = ({ setActivePage }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Company Name</h3>
+            <h3 className="text-xl font-bold mb-4">Hem Debt Consultants Pvt Ltd.</h3>
             <p className="text-gray-400 mb-4">
-              Providing reliable tech services since 2020. Your vision, our expertise.
+              A Risk Management Team
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <FaFacebook size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <FaTwitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/hemgroup_" target='_blank' className="text-gray-400 hover:text-white transition-colors">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/hem-groups/" target='_blank' className="text-gray-400 hover:text-white transition-colors">
                 <FaLinkedin size={20} />
               </a>
             </div>
@@ -51,15 +51,24 @@ const Footer = ({ setActivePage }) => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-gray-400 mt-1" />
-                <span className="text-gray-400">123 Business Street, New York, NY 10001</span>
+                <span className="text-gray-400">Head Office: <br />
+                  Flat No. 201, 2nd Floor, Indira Chambers, 1549-B, Sadashiv Peth, Opp. Maharashtra Mandal, Tilak Road, Pune - 411030.
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <FaMapMarkerAlt className="text-gray-400 mt-1" />
+                <span className="text-gray-400">
+                  Regional Office: <br />
+                  Flat no. 6. Rugved CHS Ltd. Landmark Near Kirti college, Veer Savarkar Marg. Prabhadevi, Mumbai Pincode : 400028</span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaPhone className="text-gray-400" />
-                <span className="text-gray-400">+1 234 567 8900</span>
+                <span className="text-gray-400">+91 9028402097 <br />
+                  +91 84840 58582</span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-gray-400" />
-                <span className="text-gray-400">info@example.com</span>
+                <span className="text-gray-400">support@hemgroups.com</span>
               </li>
             </ul>
           </div>
@@ -73,13 +82,13 @@ const Footer = ({ setActivePage }) => {
             <p className="text-gray-400 text-sm">
               &copy; {currentYear} Company Name. All rights reserved.
             </p>
-            <div className="mt-2 md:mt-0">
+            {/* <div className="mt-2 md:mt-0">
               <ul className="flex space-x-4 text-sm">
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

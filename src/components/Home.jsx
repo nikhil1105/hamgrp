@@ -2,10 +2,10 @@ import React from 'react'
 import HomeSlider from './HomeSlider'
 import WhyChooseUs from './WhyChooseUs'
 
-function Home() {
+function Home({setActivePage}) {
     return (
         <div>
-            <HomeSlider />
+            <HomeSlider setActivePage={setActivePage} />
             <WhyChooseUs />
         </div>
     )

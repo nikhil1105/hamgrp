@@ -29,13 +29,14 @@ const Navbar = ({ setActivePage, activePage }) => {
 
   const navItems = [
     { title: 'Home', value: 'home' },
-    { title: 'About', value: 'about' },
-    { title: 'Service', value: 'service' },
-    { title: "FAQ's", value: 'faq' },
-    { title: 'Client', value: 'client' },
-    { title: 'Teams', value: 'teams' },
-    { title: 'ClientDubai', value: 'clientDubai' },
-    { title: 'ClientIndia', value: 'clientIndia' },
+    { title: 'About Us', value: 'about' },
+    { title: 'Services', value: 'service' },
+    { title: 'Our Team', value: 'teams' },
+    { title: 'Our Clients', value: 'client' },
+    { title: 'Client Dubai', value: 'clientDubai' },
+    { title: 'Client India', value: 'clientIndia' },
+    { title: "FAQ", value: 'faq' },
+    { title: "Privacy policy", value: 'Privacy' },
   ];
 
   // Animation variants
@@ -112,13 +113,10 @@ const Navbar = ({ setActivePage, activePage }) => {
         </div>
       </div>
 
-      <motion.header
+      <header
         className={`sticky top-0 w-full z-50 ${scrolled ? 'py-2' : 'py-3'} bg-orange-200 shadow-md`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ type: "spring", stiffness: 50, damping: 15 }}
       >
-        <div className={`mx-auto px-4 md:px-12 transition-all duration-300 ${scrolled ? 'max-w-7xl' : 'max-w-full'
+        <div className={`mx-auto px-4 md:px-12 transition-all duration-300 ${scrolled ? 'max-w-[90%]' : 'max-w-full'
           }`}>
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -127,6 +125,7 @@ const Navbar = ({ setActivePage, activePage }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
+              onClick={() => { window.location.reload() }}
             >
               <img src="/logo/logo.png" alt="Logo" className="h-8 md:h-10 w-auto" />
             </motion.div>
@@ -222,7 +221,7 @@ const Navbar = ({ setActivePage, activePage }) => {
             </div>
           </div>
         </div>
-      </motion.header>
+      </header>
 
       {/* Mobile Navigation Dropdown */}
       <AnimatePresence>
