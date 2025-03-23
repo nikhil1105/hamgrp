@@ -171,7 +171,7 @@ const Navbar = ({ setActivePage, activePage }) => {
                   boxShadow: "0 10px 15px rgba(59, 130, 246, 0.4)"
                 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => { setActivePage('contact'); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                onClick={() => { handleNavClick('contact') }}
               >
                 Contact Us
               </motion.button>
@@ -255,7 +255,7 @@ const Navbar = ({ setActivePage, activePage }) => {
                   className="w-full cursor-pointer py-2 bg-orange-600 text-white rounded-md font-medium text-sm hover:bg-orange-700 active:bg-orange-800 transition-colors"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => { setActivePage('contact'); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  onClick={() => { handleNavClick('contact') }}
                 >
                   Contact Us
                 </motion.button>

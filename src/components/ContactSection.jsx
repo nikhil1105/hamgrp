@@ -83,7 +83,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 md:p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-10 rounded-2xl shadow-lg w-full max-w-5xl">
         {/* Address Section */}
         <motion.div className="bg-gray-50 p-6 rounded-xl shadow-sm"
