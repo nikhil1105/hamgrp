@@ -129,7 +129,7 @@ export default function ContactSection() {
             <input type="text" name="passportNumber" value={formData.passportNumber} onChange={handleChange} placeholder="Passport Number (Optional)" className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             <input type="date" name="dob" value={formData.dob} onChange={handleChange} placeholder="Date of Birth (Optional)" className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 h-24" />
-            
+
             <motion.button
               whileHover={!isSubmitting ? { scale: 1.05 } : {}}
               whileTap={!isSubmitting ? { scale: 0.95 } : {}}
@@ -144,12 +144,22 @@ export default function ContactSection() {
 
       {/* Social Media Icons */}
       <div className="flex gap-4 mt-6">
-        {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map((Icon, index) => (
-          <motion.div key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="p-3 bg-gray-200 rounded-lg cursor-pointer shadow-md hover:bg-gray-300">
+        {[
+          { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/hem-groups/" },
+          { Icon: FaInstagram, link: "https://www.instagram.com/hemgroup_" },
+        ].map(({ Icon, link }, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="p-3 bg-gray-200 rounded-lg cursor-pointer shadow-md hover:bg-gray-300"
+            onClick={() => window.open(link, "_blank")}
+          >
             <Icon className="text-gray-700" size={20} />
           </motion.div>
         ))}
       </div>
+
     </div>
   );
 }
