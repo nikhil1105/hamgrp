@@ -94,13 +94,17 @@ const Navbar = ({ setActivePage, activePage }) => {
   return (
     <>
       {/* Social Links Bar - Mobile Only */}
-      <div className="bg-orange-800 text-white py-2 md:hidden">
+      <div className="bg-orange-800 text-white py-2 ">
         <div className="flex justify-between px-4 items-center">
           <div className="flex space-x-4">
-            {[FaFacebook, FaTwitter, FaInstagram, FaLinkedin].map((Icon, i) => (
+            {[
+              { Icon: FaLinkedin, link: "https://www.linkedin.com/company/hem-groups/" },
+              { Icon: FaInstagram, link: "https://www.instagram.com/hemgroup_" },
+            ].map(({ Icon, link }, i) => (
               <motion.a
                 key={i}
-                href="#"
+                href={link}
+                target='_blank'
                 className="hover:text-orange-400 transition-colors"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
