@@ -33,10 +33,9 @@ const Navbar = ({ setActivePage, activePage }) => {
     { title: 'Services', value: 'service' },
     { title: 'Our Team', value: 'teams' },
     { title: 'Our Clients', value: 'client' },
-    { title: 'Client Dubai', value: 'clientDubai' },
-    { title: 'Client India', value: 'clientIndia' },
+    { title: 'Collection in Dubai', value: 'clientDubai' },
+    { title: 'Collection in India', value: 'clientIndia' },
     { title: "FAQ", value: 'faq' },
-    { title: "Privacy policy", value: 'Privacy' },
   ];
 
   // Animation variants

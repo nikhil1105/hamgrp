@@ -38,8 +38,8 @@ export default function ContactSection() {
 
     emailjs
       .send(
-        "service_fh73kyg", // Replace with EmailJS Service ID
-        "template_vprdfwq", // Replace with EmailJS Template ID
+        "service_9jpiokg", // Replace with EmailJS Service ID
+        "template_ihv0nhc", // Replace with EmailJS Template ID
         {
           fullName: formData.fullName,
           email: formData.email,
@@ -48,7 +48,7 @@ export default function ContactSection() {
           passportNumber: formData.passportNumber || "Not provided",
           dob: formData.dob || "Not provided",
         },
-        "SmNlCMQ0qdnWVrNc3" // Replace with EmailJS Public Key
+        "hEcB053p8vN6V6nd9" // Replace with EmailJS Public Key
       )
       .then(() => {
         setFormData({

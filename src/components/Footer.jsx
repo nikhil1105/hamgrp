@@ -80,7 +80,7 @@ const Footer = ({ setActivePage }) => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Company Name. All rights reserved.
+              &copy; {currentYear} Hem Debt Consultants Pvt Ltd. All rights reserved.
             </p>
             {/* <div className="mt-2 md:mt-0">
               <ul className="flex space-x-4 text-sm">
