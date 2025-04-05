@@ -22,7 +22,7 @@ function App() {
     service: <Service />,
     client: <Client />,
     teams: <ProfileCard />,
-    Privacy: <PrivacyPolicy />,
+    Privacy: <PrivacyPolicy setActivePage={setActivePage}/>,
     clientDubai: <DebtCollectionServices />,
     clientIndia: <DebtRecoverySolutions />,
     contact: <ContactSection />
