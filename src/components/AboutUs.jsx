@@ -30,7 +30,7 @@ function About() {
                             </p>
 
                             <p className="text-gray-700 leading-relaxed mb-4">
-                                On behalf of HEM Debts, Loans & Overdue, and Rescheduling Services, we are committed to assisting our clients in achieving a brighter financial future. Our goal is to alleviate your debt-related concerns by providing effective and personalized debt solutions.
+                                On behalf of HEM Groups, we are committed to assisting our clients in achieving a brighter financial future. Our goal is to alleviate your debt-related concerns by providing effective and personalized debt solutions.
                             </p>
                             
                             <p className="text-gray-700 leading-relaxed">
@@ -90,7 +90,7 @@ function About() {
                             Our Vision
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
-                            To be the most reliable financial partner in the UAE, providing tailored solutions for over-indebted individuals and SMEs.
+                            To be the most reliable financial partner in the India & UAE, providing tailored solutions for over-indebted individuals and SMEs.
                             Our goal is to mediate between clients and financial institutions to create sustainable repayment plans.
                         </p>
                     </div>

@@ -21,16 +21,16 @@ const ClientLogos = ({ categories }) => {
             </div>
 
             <div
-  className={`grid gap-6 ${
-    category.title === "International Clients"
-      ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-center"
-      : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-  }`}
->
+              className={`grid gap-6 ${category.title === "International Clients"
+                  ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 justify-center"
+                  : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                }`}
+            >
               {category.logos.map((logo, idx) => (
                 <div
                   key={idx}
-                  className="flex justify-center items-center p-4 bg-gray-50 shadow-md rounded-lg h-24 w-full border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300"
+                  className={`flex justify-center items-center p-4 bg-gray-50 shadow-md rounded-lg w-full border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 ${category.title === "International Clients" ? "h-32" : "h-24"
+                    }`}
                 >
                   <img
                     src={logo.src}
@@ -78,6 +78,7 @@ const clientData = [
       { src: "/clients/internationalClients/rakbank.jpg", alt: "RAKBank" },
       { src: "/clients/internationalClients/FabLogo-1.png", alt: "First Abu Dhabi Bank" },
       { src: "/clients/internationalClients/DIB-1.png", alt: "Dubai Islamic Bank" },
+      { src: "/clients/internationalClients/Cbi.jpeg", alt: "CBI Bank" },
     ],
   },
 ];

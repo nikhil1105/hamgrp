@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
         <div className="p-8">
           <div className="mb-8 bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
             <p className="text-lg">
-              <span className="font-semibold text-blue-700">HEM Groups & Overdues Rescheduling Services</span> ("us", "we", or "our") operates the website (the "Service").
+              <span className="font-semibold text-blue-700">HEM Groups </span> ("us", "we", or "our") operates the website (the "Service").
             </p>
             
             <p className="mt-4">
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                 "Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.",
                 "If you are located outside India and choose to provide information to us, please note that we transfer the data, including Personal Data, to India and process it there.",
                 "Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.",
-                "HEM Groups & Overdues Rescheduling Services will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information."
+                "HEM Groups will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information."
               ]} 
             />
             
@@ -46,11 +46,11 @@ const PrivacyPolicy = () => {
                 <div key="disclosure">
                   <h3 className="text-xl font-semibold text-orange-600 mt-4 mb-2">Legal Requirements</h3>
                   <p>
-                    HEM Groups & Overdues Rescheduling Services may disclose your Personal Data in the good faith belief that such action is necessary to:
+                    HEM Groups may disclose your Personal Data in the good faith belief that such action is necessary to:
                   </p>
                   <ul className="list-disc list-inside mt-3 space-y-1 text-gray-700 pl-4">
                     <li>To comply with a legal obligation</li>
-                    <li>To protect and defend the rights or property of HEM Groups & Overdues Rescheduling Services</li>
+                    <li>To protect and defend the rights or property of HEM Groups </li>
                     <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
                     <li>To protect the personal safety of users of the Service or the public</li>
                     <li>To protect against legal liability</li>

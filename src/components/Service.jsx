@@ -45,7 +45,7 @@ function Service() {
               {[
                 {
                   region: 'West Region',
-                  cities: 'Vasai, Virar (Mumbai), Pune, Nasik, Aurangabad'
+                  cities: 'Thane (Mumbai), Pune, Nasik, Aurangabad'
                 },
                 {
                   region: 'Center Region',

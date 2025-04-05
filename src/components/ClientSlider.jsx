@@ -24,6 +24,7 @@ const dubai = [
     "/clients/internationalClients/DIB-1.png",
     "/clients/internationalClients/FabLogo-1.png",
     "/clients/internationalClients/rakbank.jpg",
+    "/clients/internationalClients/Cbi.jpeg",
 ];
 
 export default function ClientSlider({ activePage }) {

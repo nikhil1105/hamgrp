@@ -30,7 +30,7 @@ const HomeSlider = () => {
     },
     {
       id: 2,
-      tagline: "DEBT COUNSELLING SERVICES IN UAE",
+      tagline: "DEBT COUNSELLING SERVICES IN INDIA & UAE",
       image: "/homeSlider/2.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ const HomeSlider = () => {
     },
     {
       id: 3,
-      tagline: "Debt Collection Dubai",
+      tagline: "Debt Collection India & Dubai",
       image: "/homeSlider/3.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
