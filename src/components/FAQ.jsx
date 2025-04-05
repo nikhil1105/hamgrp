@@ -8,12 +8,12 @@ const faqs = [
       "A debt collection agency helps businesses recover unpaid debts from customers. They use various methods, including letters, phone calls, and sometimes legal action, to ensure that outstanding amounts are paid. If you're looking for an affordable debt collection agency, they can provide cost-effective solutions to help you get your money back.",
   },
   {
-    question: "How does debt collection work in Dubai?",
+    question: "How does debt collection work?",
     answer:
       "Debt collection in Dubai involves a structured process where agencies work to recover debts from individuals or businesses. Experienced debt collectors in Dubai follow UAE laws and regulations, starting with communication and negotiation, and moving to legal action if necessary.",
   },
   {
-    question: "What are the debt collection laws in UAE?",
+    question: "What are the debt collection laws?",
     answer:
       "The UAE has specific laws that govern how debts can be collected. These laws are designed to protect both creditors and debtors. Dubai debt collection laws explained include regulations on how debt collectors can contact debtors, limits on charges, and the steps required before taking legal action.",
   },
