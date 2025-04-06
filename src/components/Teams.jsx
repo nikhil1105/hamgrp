@@ -30,7 +30,7 @@ const ProfileCard = () => {
           />
         </div>
         <h2 className="text-2xl font-bold text-blue-800">Brijesh Nair </h2>
-        <h3 className="text-lg text-orange-600 mb-2 font-medium">Business  Analyst , Corporate & Strategic Advisor</h3>
+        <h3 className="text-lg text-orange-600 mb-2 font-medium">Business  Analyst & Corporate  Strategic Advisor</h3>
         <div className="w-16 h-1 mx-auto mb-4 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full"></div>
         <p className="text-gray-700 text-sm leading-relaxed">
           Director of Hem group Brijesh Nair specializes in providing tailored strategies to provide quality deliverables. With over 20 years of experience in the financial sector/services, Brijesh has worked with HDFC bank and E Serve International Ltd (CITI BANK). The skills of leadership, resourceful in ensuring desired business requirements, strict adherence to guidelines, affirm commitment are what Brijesh Nair strongly believes to maintain strong client relationship across.
