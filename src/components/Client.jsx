@@ -14,16 +14,16 @@ const ClientLogos = ({ categories }) => {
 
         {categories.map((category, index) => (
           <div key={index} className="mb-12 bg-white rounded-xl shadow-lg p-8">
-            <div className="flex items-center justify-center mb-6">
-              <div className="h-1 w-10 bg-orange-500 mr-3"></div>
-              <h2 className="text-2xl font-bold text-blue-700">{category.title}</h2>
-              <div className="h-1 w-10 bg-orange-500 ml-3"></div>
+            <div className="flex items-center justify-center mb-6 overflow-x-auto whitespace-nowrap">
+              <div className="h-1 w-10 bg-orange-500 mr-3 shrink-0"></div>
+              <h2 className="text-2xl font-bold text-blue-700 shrink-0">{category.title}</h2>
+              <div className="h-1 w-10 bg-orange-500 ml-3 shrink-0"></div>
             </div>
 
             <div
               className={`grid gap-6 ${category.title === "International Clients"
-                  ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 justify-center"
-                  : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 justify-center"
+                : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
                 }`}
             >
               {category.logos.map((logo, idx) => (
