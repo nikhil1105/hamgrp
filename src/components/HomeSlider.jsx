@@ -30,7 +30,7 @@ const HomeSlider = ({setActivePage}) => {
     },
     {
       id: 2,
-      tagline: "Debt Counselling Services in India & UAE",
+      tagline: "Debt counselling services in India & UAE",
       image: "/homeSlider/2.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ const HomeSlider = ({setActivePage}) => {
     },
     {
       id: 3,
-      tagline: "Debt Collection India & Dubai",
+      tagline: "Debt collection India & Dubai",
       image: "/homeSlider/3.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">
