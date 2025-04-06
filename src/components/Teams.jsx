@@ -3,7 +3,7 @@ import React from "react";
 const ProfileCard = () => {
   return (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-stretch gap-8 bg-gradient-to-br from-blue-50 to-orange-50 shadow-xl rounded-2xl overflow-hidden p-8 border border-blue-100">
-      <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-blue-500 transition-transform hover:scale-102">
+      <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-orange-500 transition-transform hover:scale-102">
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img
@@ -20,7 +20,7 @@ const ProfileCard = () => {
         </p>
       </div>
 
-      <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-orange-500 transition-transform hover:scale-102">
+      <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-blue-500 transition-transform hover:scale-102">
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-400 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img
@@ -41,7 +41,7 @@ const ProfileCard = () => {
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img
-            src="/team/hem2.jpeg"
+            src="/team/hem3.jpeg"
             alt="Brijesh Nair"
             className="relative w-32 h-32 mx-auto rounded-full mb-4 border-2 border-white shadow-lg object-cover"
           />
@@ -50,8 +50,7 @@ const ProfileCard = () => {
         <h3 className="text-lg text-orange-600 mb-2 font-medium">Director</h3>
         <div className="w-16 h-1 mx-auto mb-4 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full"></div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          Director of Hem group Brijesh Nair specializes in providing tailored strategies to provide quality deliverables. With over 20 years of experience in the financial sector/services, Brijesh has worked with HDFC bank and E Serve International Ltd (CITI BANK). The skills of leadership, resourceful in ensuring desired business requirements, strict adherence to guidelines, affirm commitment are what Brijesh Nair strongly believes to maintain strong client relationship across.
-        </p>
+        Akshaya Mitra brings a results-driven approach to financial services, leveraging extensive experience to deliver impactful solutions. Known for her analytical acumen and commitment to exceeding client expectations, Akshaya excels in navigating complex financial landscapes. She is dedicated to providing clear, actionable strategies that drive growth and optimize performance.        </p>
       </div>
     </div>
   );

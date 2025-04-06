@@ -197,9 +197,7 @@ function Service() {
           <h1 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h1>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
-            We offer tailored services designed to meet your specific needs. Our goal is to work collaboratively with you to
-            optimize your cash flow and reduce debtor days. We maintain a respectful and professional approach when
-            communicating with debtors, fostering positive business relationships while safeguarding our clients' interests.
+            In today's business climate, efficient debt recovery is crucial. We offer tailored solutions to minimize debtor days and preserve client relationships. Unlike generic services, we collaborate closely to understand your needs. Our approach emphasizes professional communication, ensuring respectful and clear dialogue with debtors, relationship preservation, finding amicable solutions to maintain client connections, and safeguarding your interests through compliance and ethics, adhering to all regulations, transparent reporting, providing clear updates on our activities, and tailored strategies, adapting to changing circumstances. Partner with us to free up resources and focus on your core business. Contact us to learn more.
           </p>
         </div>
 
