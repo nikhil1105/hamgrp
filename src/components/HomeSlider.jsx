@@ -53,7 +53,7 @@ const HomeSlider = ({setActivePage}) => {
     },
     {
       id: 3,
-      tagline: "Debt collection India & Dubai",
+      tagline: "Debt collection in India & Dubai",
       image: "/homeSlider/3.jpeg",
       content: (
         <div className="max-w-3xl mx-auto">

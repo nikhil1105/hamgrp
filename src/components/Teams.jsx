@@ -16,8 +16,7 @@ const ProfileCard = () => {
         <h3 className="text-lg text-orange-600 mb-2 font-medium">Managing Director</h3>
         <div className="w-16 h-1 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-orange-400 rounded-full"></div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          Mr. Arabinda Mitra has 20 years of experience in Collections & AVCV, debt collection, back-end operation, credit card collection, and other collections. He started with Citi bank with 3 employees to 350 clients. He is the pioneer of building Citi bank network. Arabinda Mitra is also an inspiring and motivating leader and has accountability for managing a team and developing talent. He has qualities of a strong critical thinker, creator, collaborator, and innovator who can effectively drive results.
-        </p>
+        Mr. Arabinda Mitra has 25 years of experience in Collections & AVCV, debt collection, back-end operation, credit card collection, and other collections. He started with 3 employees to now more than 500+ employees across India with multiple ventures. He is the pioneer of building Citi bank network. Arabinda Mitra is also an inspiring and motivating leader and has accountability for managing a team and developing talent. He has qualities of a strong critical thinker, creator, collaborator, and innovator who can effectively drive results.        </p>
       </div>
 
       <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-blue-500 transition-transform hover:scale-102">
@@ -25,16 +24,15 @@ const ProfileCard = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-400 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img
             src="/team/hem2.jpeg"
-            alt="Brijesh Nair"
+            alt="Brejesh Nair"
             className="relative w-32 h-32 mx-auto rounded-full mb-4 border-2 border-white shadow-lg object-cover"
           />
         </div>
-        <h2 className="text-2xl font-bold text-blue-800">Brijesh Nair </h2>
+        <h2 className="text-2xl font-bold text-blue-800">Brejesh Nair </h2>
         <h3 className="text-lg text-orange-600 mb-2 font-medium">Business Analyst & Corporate Strategic Advisor</h3>
         <div className="w-16 h-1 mx-auto mb-4 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full"></div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          Director of Hem group Brijesh Nair specializes in providing tailored strategies to provide quality deliverables. With over 20 years of experience in the financial sector/services, Brijesh has worked with HDFC bank and E Serve International Ltd (CITI BANK). The skills of leadership, resourceful in ensuring desired business requirements, strict adherence to guidelines, affirm commitment are what Brijesh Nair strongly believes to maintain strong client relationship across.
-        </p>
+        Brejesh Nair specializes in providing tailored strategies to ensure quality deliverables. With over 27 years of experience in the financial sector/services, Brejesh has worked with HDFC Bank and E Serve International Ltd (CITI BANK). His leadership skills, resourcefulness in ensuring desired business requirements, and strict adherence to guidelines affirm his commitment to maintaining strong client relationships.        </p>
       </div>
 
       <div className="w-full md:w-1/2 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-orange-500 transition-transform hover:scale-102">
@@ -42,7 +40,7 @@ const ProfileCard = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-blue-500 rounded-full transform -translate-y-1 translate-x-1 opacity-50"></div>
           <img
             src="/team/hem3.jpeg"
-            alt="Brijesh Nair"
+            alt="Akashaya mitra"
             className="relative w-32 h-32 mx-auto rounded-full mb-4 border-2 border-white shadow-lg object-cover"
           />
         </div>

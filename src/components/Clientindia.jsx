@@ -10,7 +10,8 @@ const DebtRecoverySolutions = () => {
             {/** Section Component for Reusability */}
             <Section
                 title="Nationwide Debt Recovery Expertise"
-                text="Hem Group's multi-city operations ensure quick and reliable debt recovery across India. With our extensive reach, we efficiently and effectively serve clients, regardless of their location. Trust us to handle your debt recovery needs seamlessly."
+                text="Hem Group's multi-city operations ensure quick and reliable debt recovery across India. With our extensive reach of over 250 field staff and around 500+ staff working in our call center and as backend support, we deliver effective service to our clients, regardless of their location.
+                Trust us to handle your debt recovery needs seamlessly."
             />
 
             <Section
@@ -21,7 +22,9 @@ const DebtRecoverySolutions = () => {
 
             <Section
                 title="Fast, Efficient, and Professional Debt Collection"
-                text="Hem Group ensures zero turnaround time for debt recovery, delivering faster results and improving your cash flow. Trust us to handle your debt collection with unmatched efficiency and professionalism. Every moment counts—let us make it count for you!"
+                text="Hem Group ensures near-zero turnaround time for debt recovery, delivering faster results and improving your cash flow. Trust us to handle your debt collection with unmatched efficiency and professionalism.
+                    We educate customers on the importance of addressing their liabilities. We explain how resolving a liability will enhance their credit score and bring new opportunities. Additionally, we act as a bridge between customers and banks for quicker resolution.
+                    Every moment counts—let us make it count for you!"
             />
 
             <Section
