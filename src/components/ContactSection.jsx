@@ -99,13 +99,13 @@ export default function ContactSection() {
             <FaMapMarkerAlt className="text-blue-500" /> Flat No. 201, 2nd Floor, Indira Chambers, 1549-B, Sadashiv Peth, Opp. Maharashtra Mandal, Tilak Road, Pune - 411030.
           </p>
           <p className="flex items-center gap-2 text-gray-600 mb-4">
-            <FaPhone className="text-blue-500" /> 020 - 41216616
+            <FaPhone className="text-blue-500" /> +91 8484058582
           </p>
           <p className="flex items-center gap-2 text-gray-600 mb-4">
-            <FaPhone className="text-blue-500" /> 9028402097
+            <FaPhone className="text-blue-500" /> +91 9028402097
           </p>
           <p className="flex items-center gap-2 text-gray-600">
-            <FaEnvelope className="text-blue-500" /> arvind.mitra@hemgroups.com
+            <FaEnvelope className="text-blue-500" /> support@hemgroups.com
           </p>
 
           {/* Regional Office */}

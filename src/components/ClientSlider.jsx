@@ -36,7 +36,7 @@ export default function ClientSlider({ activePage }) {
             <h2 className="text-2xl text-center font-bold text-orange-600 mb-6">Our Clients</h2>
             <div className="relative flex w-full mt-[10px]">
                 <motion.div
-                    className="flex space-x-10 min-w-[300%]"
+                    className="flex space-x-10 min-w-[1000%] md:min-w-[300%]"
                     initial={{ x: 0 }}
                     animate={{ x: "-100%" }}
                     transition={{
