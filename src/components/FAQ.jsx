@@ -10,17 +10,17 @@ const faqs = [
   {
     question: "How does debt collection work?",
     answer:
-      "Debt collection in Dubai involves a structured process where agencies work to recover debts from individuals or businesses. Experienced debt collectors in Dubai follow UAE laws and regulations, starting with communication and negotiation, and moving to legal action if necessary.",
+      "Debt collection involves a structured process where agencies work to recover debts from individuals or businesses. Experienced debt collectors follow laws and regulations, starting with communication and negotiation, and moving to legal action if necessary.",
   },
   {
     question: "What are the debt collection laws?",
     answer:
-      "The UAE has specific laws that govern how debts can be collected. These laws are designed to protect both creditors and debtors. Dubai debt collection laws explained include regulations on how debt collectors can contact debtors, limits on charges, and the steps required before taking legal action.",
+      "Laws globally regulate how debts can be collected to protect both creditors' rights to recover what is owed and debtors from unfair or abusive practices.They explain how debt collectors can contact debtors, limits on charges, and the steps required before taking legal action.",
   },
   {
     question: "What is the debt recovery process?",
     answer:
-      "The debt recovery process typically starts with the creditor attempting to contact the debtor. If this fails, the creditor might hire a debt recovery agency in UAE who will then send demand letters, make phone calls, and possibly initiate legal proceedings to recover the debt.",
+      "The debt recovery process typically starts with the creditor attempting to contact the debtor. If this fails, the creditor might hire a debt recovery agency who will then send demand letters, make phone calls, and possibly initiate legal proceedings to recover the debt.",
   },
   {
     question: "Can a debt collection agency sue you?",
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "What are the benefits of hiring a debt collection agency?",
     answer:
-      "Hiring a debt collection agency can save you time and effort, increase the chances of debt recovery, and ensure compliance with legal regulations. They have expertise in negotiations and legal processes, making debt recovery more efficient.",
+      "Hiring a debt collection agency can save your time and effort, increase the chances of debt recovery, and ensure compliance with legal regulations. They have expertise in negotiations and legal processes, making debt recovery more efficient.",
   },
 ];
 
