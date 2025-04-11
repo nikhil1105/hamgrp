@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { BASE_URL } from '../config';
 
 const HomeSlider = ({setActivePage}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -104,7 +105,7 @@ const HomeSlider = ({setActivePage}) => {
           className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${currentSlide === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${slide.image})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${ BASE_URL + slide.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
