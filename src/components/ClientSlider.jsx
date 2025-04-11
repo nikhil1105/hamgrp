@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { BASE_URL } from "../config";
 
 const india = [
     "/clients/airtel.jpg",
@@ -46,7 +47,7 @@ export default function ClientSlider({ activePage }) {
                     }}
                 >
                     {logos.map((logo, index) => (
-                        <img key={index} src={logo} alt="Client Logo" className="h-16 md:h-20 w-auto" />
+                        <img key={index} src={BASE_URL + logo} alt="Client Logo" className="h-16 md:h-20 w-auto" />
                     ))}
                 </motion.div>
             </div>

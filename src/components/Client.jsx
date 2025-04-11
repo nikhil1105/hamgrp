@@ -1,4 +1,5 @@
 import React from "react";
+import { BASE_URL } from "../config";
 
 const ClientLogos = ({ categories }) => {
   return (
@@ -33,7 +34,7 @@ const ClientLogos = ({ categories }) => {
                     }`}
                 >
                   <img
-                    src={logo.src}
+                    src={BASE_URL + logo.src}
                     alt={logo.alt}
                     className="h-full max-w-full object-contain"
                   />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaSearch, FaUserCircle } from 'react-icons/fa';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { BASE_URL } from '../config';
 
 const Navbar = ({ setActivePage, activePage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -130,7 +131,7 @@ const Navbar = ({ setActivePage, activePage }) => {
               transition={{ duration: 0.5 }}
               onClick={() => { window.location.reload() }}
             >
-              <img src="/logo/logo.png" alt="Logo" className="h-8 md:h-10 w-auto" />
+              <img src={BASE_URL + "/logo/logo.png"} alt="Logo" className="h-8 md:h-10 w-auto" />
             </motion.div>
 
             {/* Desktop Navigation */}
